@@ -1,0 +1,69 @@
+@import url("color.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    overscroll-behavior: none;
+}
+
+.adminStudentContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.adminStudentRowTop {
+    display: flex;  
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 1rem;
+}
+
+.adminStudentRowTop input {
+    width: 30%;
+    padding: .9rem;
+    border: 1px solid var(--bgColor);
+    border-radius: 5px;
+}
+
+.adminStudentRowTop input:focus{
+    outline: 1px solid var(--bgColor);
+}
+
+.adminStudentRowBottom {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.adminStudentTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.adminStudentTable th {
+    background-color: var(--bgColor);
+    color: var(--textColor);
+    padding: 10px;
+}
+
+.adminStudentTable td {
+    padding: 15px 5px;
+    font-size: .8rem
+}
+
+.adminStudentTable tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}

@@ -1,0 +1,73 @@
+@import url("color.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    overscroll-behavior: none;
+}
+
+.adminDashboard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.cardCon{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+
+.adminDashboard .card{
+    width: 350px;
+    height: 200px;
+    border: 2px solid var(--bgColor);
+    border-radius: 10px;
+    margin-top: 2rem;
+    padding: 1rem;
+    box-shadow: 0px 5px 10px var(--bgColor);
+    transition: all .3s ease;
+}
+
+.adminDashboard .card:hover{
+    transform: scale(1.1);
+}
+
+.card-content h1{
+    font-size: 4rem;
+    color: var(--bgColor);
+    margin-bottom: 2rem;
+    text-align: center;
+    
+}
+
+.card-content h3{
+    padding: 10px;
+    background-color: var(--bgColor);
+    color: var(--textColor);
+    border-radius: 10px;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.CanvasCon{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+

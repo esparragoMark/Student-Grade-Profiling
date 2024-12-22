@@ -1,0 +1,181 @@
+@import url("color.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    overscroll-behavior: none;
+}
+
+.studentProfileCon{
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+    overflow: auto;
+}
+
+/* Table Styles */
+.table {
+    /* border-collapse: collapse; */
+    text-align: center;
+    width: 100%;
+}
+.table th {
+    background-color:var(--bgColor);
+    color: var(--textColor);
+    padding: 10px;
+}
+.table td {
+    padding: 10px 2px;
+    font-size: .8rem;
+}
+.table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* button */
+
+.studentPro-btn .btn{
+    padding: 3px;
+    font-size: .8rem;
+    color: var(--textColor);
+    border-radius: 3px;
+    border: none;
+    background-color: var(--bgColor);
+    transition: all .2s ease;
+}
+
+.studentPro-btn .btn:hover{
+    background-color: var(--textColor);
+    color: var(--bgColor);
+    outline: 1px solid var(--bgColor)
+}
+
+.table .studProf-thead{
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+}
+
+
+/* top nav */
+
+.studentProfileCon .studentProfileNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    /* outline: 1px solid black; */
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+    background-color: var(--bgColor);
+    color: var(--textColor);
+}
+
+.studentProfileNav .form-group-studentProfile label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.form-group-studentProfile input,
+.form-group-studentProfile select{
+    width: 7rem; 
+    padding: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    font-size: 1rem; 
+    outline: none;
+}
+
+
+.form-group-studentProfile input:focus,
+.form-group-studentProfile select:focus{
+    border-color:var(--bgColor); 
+    box-shadow: 0 0 5px var(--bgColor); 
+    outline: none;
+}
+
+
+/* Moal Design for data analtics */
+/* Modal Styles */
+.analytic-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+    scrollbar-width: thin;
+}
+
+.analytic-modal-content {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 98%; 
+    height: 98%;
+    overflow: auto; 
+}
+
+/* Grid Layout for the charts */
+.chart-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px; /* Space between charts */
+    height: calc(100% - 40px); /* Take full height minus padding */
+}
+
+/* Style for each chart container */
+.quarter-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Make each chart canvas larger */
+canvas {
+    width: 100% !important; /* Make the canvas take full width */
+    height: 300px !important; /* Adjust height */
+    max-height: 100% !important;
+}
+
+/* Close Button */
+#closeModal {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: var(--textColor);
+    color: var(--bgColor);
+    border: 1px solid var(--bgColor);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: block;
+    margin: 0px;
+    transition: background-color 0.3s ease;
+}
+
+#closeModal:hover {
+    background-color: var(--bgColor);
+    color: var(--textColor);
+}
+
+

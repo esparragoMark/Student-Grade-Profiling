@@ -1,0 +1,98 @@
+@import url("color.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    overscroll-behavior: none;
+}
+
+.teacherAccountCon{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account_wrapper{
+    width: 60%;
+    height: 90%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 3px solid var(--bgColor);
+    box-shadow: 0px 5px 10px var(--bgColor);
+}
+.image-wrapper{
+    position: relative;
+}
+.image-wrapper button{
+    padding: 5px;
+    font-size: .8rem;
+    color: var(--bgColor);
+    background-color: var(--textColor);
+    border-color: var(--bgColor);
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    bottom: 30px;
+    right: 20px
+}
+
+.image-wrapper button:hover{
+    cursor: pointer;
+}
+.account_wrapper .image-wrapper img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.input_wrapper input{
+    width: 440px;
+    margin-bottom: 1rem;
+}
+
+.input_wrapper p{
+    margin-bottom: 1rem;
+    color: var(--bgColor);
+    font-weight: bold;
+}
+
+.btn_wrapper{
+    width: 100%;
+}
+
+.btn_wrapper i{
+    margin-right: 10px;
+}
+.btn_wrapper button{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--bgColor);
+    color: var(--textColor);
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn_wrapper button:hover{
+    cursor: pointer;
+    background-color: var(--textColor);
+    outline: 1px solid var(--bgColor);
+    color: var(--bgColor)
+}
+
+.btn_wrapper #save_button {
+    display: none;
+}

@@ -1,0 +1,163 @@
+@import url("color.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    overscroll-behavior: none;
+}
+
+.classRecordCon{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 1rem;
+}
+
+.classRecordCon .classRecordNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    /* outline: 1px solid black; */
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+    background-color: var(--bgColor);
+    color: var(--textColor);
+}
+
+.classRecordNav .form-group-classRecord label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.form-group-classRecord input,
+.form-group-classRecord select{
+    width: 7rem; 
+    padding: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    font-size: 1rem; 
+    outline: none;
+}
+
+
+.form-group-classRecord input:focus,
+.form-group-classRecord select:focus{
+    border-color:var(--bgColor); 
+    box-shadow: 0 0 5px var(--bgColor); 
+    outline: none;
+}
+
+/* design for table class record */
+
+.classRecordCon .table-classRecord{
+    flex: 1;
+}
+
+.classRecordTable{
+    width: 100%;
+}
+
+.thead-tr th{
+    padding: 10px 0px;
+    
+    color: var(--bgColor);
+}
+
+.classRecordTable tr,
+.classRecordTable td,
+.classRecordTable th{
+    outline: 2px solid var(--bgColor);
+}
+
+.label-th{
+    background-color:var(--bgColor);
+    text-align: left;
+    padding-left: 1rem;
+    color: var(--textColor);
+}
+
+.td-data input{
+    width: 100%;
+    border: none;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.td-studentName{
+    font-size: .8rem;
+}
+
+
+.classRecord-edit-btn, 
+.classRecord-save-btn{
+    width: 90%;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.classRecord-edit-btn{
+    background-color: var(--btnColor);
+    color: var(--textColor);
+    border: none;
+    transition: all .2s ease;
+}
+
+.classRecord-edit-btn:hover{
+    color: var(--btnColor);
+    outline: 1px solid var(--btnColor);
+    background-color: var(--textColor);
+}
+
+.classRecord-save-btn{
+    display: none;
+    background-color: #2d9f73;
+    color: var(--textColor);
+    border: none;
+    transition: all .2s ease;
+}
+
+.classRecord-save-btn:hover{
+    color: #2d9f73;;
+    outline: 1px solid #2d9f73;;
+    background-color: var(--textColor);
+}
+
+.td-btn{
+    text-align: center;
+}
+
+.classRecordTable .tablehead {
+    position: sticky;
+    top: 0; 
+    z-index: 1;  
+    background-color: var(--bgColor);
+    color: var(--textColor);
+}
+
+/* btn add record */
+
+.form-group-classRecord .addClassRecord-btn{
+    padding: 5px 10px;
+    color: var(--textColor);
+    background-color: var(--bgColor);
+    outline: 0px;
+    border: 1px solid var(--textColor);
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+.form-group-classRecord .addClassRecord-btn:hover{
+    background-color: var(--textColor);
+    color: var(--bgColor);
+    transform: scale(1.1);
+}
